@@ -34,7 +34,7 @@ function App() {
   }
 
   function check() {
-    var logindetails = axios.get(`http://localhost:4000/login?username=${user}&password=${pass}`)
+    var logindetails = axios.get(`https://login-backend-jet.vercel.app/login?username=${user}&password=${pass}`)
 
     logindetails.then(function (data) {
       if (data.data === true) {
